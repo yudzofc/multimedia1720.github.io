@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+#header{
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+.navbar{
+    padding: 5px 0 5px;
+    border-end-end-radius: 3px;
+    border-end-start-radius: 3px;
+}
+
+.navbar::after{
+    height: 212px;
+}
+
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1.5em;
+    transition: .2s linear;
+}
+
+.navbar-brand:hover,
+.navbar-brand{
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-brand:hover{
+    opacity: .8;
+}
+
+.navbar-dark .navbar-brand, .nav-link{
+    color: #dcdde1 !important;
+}
+
+.nav-item{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: .8em;
+}
+
+.navbar-nav{
+    padding: 5px;
+    padding-bottom: 0 !important;
+    bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.nav-link{
+    background: none;
+    color: #1e741b !important;
+    padding-left: 3px !important;
+    transition: .3s linear;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+    border-radius: 3px;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* akhir Navbar */
+
+/* Section Kiri */
+.display{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sesi-kiri{
+    float: left !important;
+    display: block !important;
+    background: #ddd;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.534) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.534) !important;
+    width: 23%;
+    position: fixed;
+}
+
+.bar{
+    display: block;
+    margin-bottom: -10px;
+}
+
+.bar h3{
+    padding: 2px 0;
+    font-size: 17px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bar .border-bottom{
+    width: 25px;
+    height: 4px;
+    margin-bottom: 10px !important;
+    margin-top: -5px !important;
+    background: skyblue;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.bar .menu{
+    padding: 2px 5px;
+    width: 123px;
+    transition: 450ms all linear;
+}
+
+.bar .menu:hover{
+    background: skyblue;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.bar .menu .sub-menu{
+    width: 100% !important;
+    font-size: 12px;
+    font-weight: 400 !important;
+    padding: 5px 5px !important;
+    color: gray;
+    transition: 450ms all linear;
+}
+
+.bar .menu:hover .sub-menu{
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* akhir Section Kiri */
+
+/* Section Kanan */
+
+/* Profil */
+.display{
+    display: flex;
+    flex-flow: column;
+    padding: 30px 5px;
+}
+
+.sesi-kanan{
+    /* background: black; */
+    overflow: hidden;
+    width: 75%;
+    /* float: right; */
+    margin-left: 24%;
+}
+
+.bottom{
+    height: 1px;
+    background: grey;
+    width: 5000px;
+    border-radius: 10px;
+    margin: 20px 0;
+    margin-left: -500px;
+    /* overflow: hidden; */
+    /* position: absolute; */
+}
+
+.profil{
+    padding: 20px 10px;
+    margin-top: 35px;
+    background: rgba(0, 0, 255, 0.651);
+    border-radius: 5px;
+}
+
+.sesi-kanan .judul{
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: bolder;
+}
+
+.profil .right{
+    display: block;
+    float: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: skyblue;
+}
+
+.profil .right-bottom{
+    display: block;
+    float: right;
+    width: 135px;
+    height: 1px;
+    margin-top: 25px;
+    margin-right: -135px;
+    background: skyblue;
+    border-radius: 5px;
+}
+
+.profil .deskripsi{
+    float: left;
+    color: white;
+    text-align: justify;
+    font-size: 17px;
+}
+/* akhir Profil */
+
+/* Organisasi Kelas */
+.organ-kelas{
+    text-align: center;
+}
+
+.organ-kelas .size{
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 40px; */
+    color: #333;
+    /* overflow: hidden; */
+}
+
+.pep{
+    float: left;
+    width: 100%;
+}
+
+.pe,
+.pep{
+    float: left;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 40px 0;
+    transition: .4s;
+}
+
+.pe{  
+    width: calc(100% / 2);
+}
+
+.pe:hover,
+.pep:hover{
+    background: #ddd;
+    border-radius: 3px;
+}
+
+.pe img,
+.pep img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5%;
+}
+
+.p-name{
+    margin: 16px 0;
+    text-transform: uppercase;
+}
+
+.p-des{
+    font-style: italic;
+    color: #3498db;
+}
+/* akhir Organisasi Kelas */
+
+/* Warga Kelas */
+.swiper-container{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide{
+    background: skyblue;
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 245px;
+    border-radius: 3px;
+}
+
+.swiper-slide .img-box{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.swiper-slide .img-box img{
+    width: 100%;
+    height: 150px;
+}
+
+.swiper-slide .details{
+    box-sizing: border-box;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+.swiper-slide .details h3{
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.swiper-slide .details h4{
+    margin: 0;
+    color: salmon;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+/* akhir Warga Kelas */
+
+/* akhir Section Kanan */
+
+
+/* Footer */
+
+footer{
+    background: cyan;
+    position: absolute;
+    min-width: 100%;
+}
+
+.row-tentang-ku{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright{
+    flex: 70%;
+    padding: 10px 20px;
+}
+
+.copyright p{
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: bolder;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ikuti-kami{
+    flex: 30%;
+    float: right;
+    padding: 10px 50px;
+}
+
+.ikuti-kami h5{
+    color: #1e741b;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.ikuti-kami a{
+    float: left;
+    margin-right: 10px;
+}
+
+.ikuti-kami img{
+    width: 20px;
+    height: 20px;
+    transition: 300ms all linear;
+}
+
+.ikuti-kami a:hover img{
+    transform: scale(1.1,1);
+}
+/* akhir Footer */
+
+
+
+
+
+/* Animation */
+
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+/* Supported on Tablet and Mobile Device */
+@media screen and (max-width: 765px) {
+
+    .navbar-collapse{
+        border-radius: 3px;
+    }
+
+    .navbar-toggler{
+        background: lightskyblue;
+        padding: 5px 10px !important;
+        color: green !important;
+    }
+
+    .sesi-kiri{
+        width: 20%;
+        padding: auto 0 !important;
+    }
+
+    .bar{
+        margin-left: -10px;
+    }
+
+    .bar h3{
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    .bar .menu .sub-menu{
+        font-size: 12px;
+        font-weight: 700;
+        padding: 6px 2px;
+    }
+
+    .profil .right-bottom{
+        width: 135px !important;
+        margin-top: 23px !important;
+        margin-right: -165px !important;
+    }
+
+    .ikuti-kami{
+        padding: 10px 30px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+
+    .navbar-brand,
+    .navbar-toggler{
+        padding: 5px 15px;
+        margin-right: 25px;
+        color: black;
+    }
+
+    .navbar-toggler{
+        background: lightskyblue;
+        padding: 5px 10px !important;
+        color: green !important;
+    }
+
+    .sesi-kiri{
+        width: 20% !important;
+        position: fixed;
+    }
+
+    .bar{
+        margin-left: -10px;
+    }
+
+    .bar h3{
+        padding: 5px 0;
+        font-size: 10px;
+    }
+
+
+    .bar .menu .sub-menu{
+        font-size: 8px;
+        font-weight: 700;
+        padding: 0 2px;
+    }
+
+    .bar .menu{
+        padding: 0;
+        width: 100%;
+    }
+    
+    .bar .menu:hover{
+        background: none;
+        border-radius: 3px;
+        width: 100%;
+    }
+
+    .sesi-kanan{
+        overflow: hidden;
+        margin-left: 22% !important;
+    }
+
+    .pe{
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .profil .right-bottom{
+        /* width: 105px !important; */
+        margin-top: 20px !important;
+        margin-right: -105px !important;
+    }
+
+    .copyright,
+    .ikuti-kami{
+        flex: 100%;
+    }
+
+    .ikuti-kami{
+        padding: 10px 20px;
+    }
+
+}
+
+@media screen and (max-width: 456px) {
+
+    .navbar-brand{
+        font-size: 20px;
+    }
+
+    .navbar-toggler{
+        padding: 1px 1px !important;
+    }
+
+    .sesi-kiri{
+        width: 28% !important;
+    }
+
+    .bar h3{
+        padding: 0;
+        font-size: 8px;
+        font-weight: 700 !important;
+        text-align: center;
+    }
+
+    .bar .menu{
+        padding: 0;
+        margin-left: -5px !important;
+        width: 65px;
+    }
+
+    .bar .menu .sub-menu{
+        font-size: 7px;
+        font-weight: 500 !important;
+        padding: 0;
+    }
+
+    .pe{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .sesi-kanan{
+        overflow: hidden;
+        /* position: absolute; */
+        margin-left: 32% !important;
+        width: 65%;
+    }
+
+    .sesi-kanan .judul{
+        font-size: 20px;
+        padding: 8px 0;
+    }
+
+    .profil .right{
+        padding-right: 2px;
+        font-size: 13px;
+    }
+
+    .profil .deskripsi{
+        font-size: 11px;
+    }
+
+    .p-name,
+    .p-des{
+        font-size: 15px;
+    }
+
+    .p-name{
+        margin: 12px 0;
+    }
+
+    .swiper-slide{
+        width: 100px;
+        height: 202px;
+    }
+    
+    .swiper-slide .img-box{
+        height: 145px;
+    }
+    
+    .swiper-slide .img-box img{
+        height: 120px;
+    }
+
+    .swiper-slide .details h3{
+        font-size: 13px;
+    }
+    
+    .swiper-slide .details h4{
+        font-size: 10px;
+    }
+
+    .copyright p{
+        font-size: 12px !important;
+    }
+
+    .ikuti-kami h5{
+        font-size: 15px;
+    }
+
+    .copyright,
+    .ikuti-kami{
+        padding:2px 10px;
+    }
+
+}
